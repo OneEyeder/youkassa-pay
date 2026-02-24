@@ -1,0 +1,19 @@
+[build]
+  command = "pip install -r requirements.txt"
+  publish = "."
+
+[build.environment]
+  PYTHON_VERSION = "3.10"
+
+[[redirects]]
+  from = "/yookassa/webhook"
+  to = "/yookassa/webhook"
+  status = 200
+
+[[redirects]]
+  from = "/return"
+  to = "/return"
+  status = 200
+
+[functions]
+  directory = "netlify/functions"
